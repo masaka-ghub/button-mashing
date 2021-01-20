@@ -1,0 +1,87 @@
+.wrapper {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.click-btn-wrapper {
+  margin: 10px auto;
+}
+
+.btn-click-target {
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 2px #668ad8;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.btn-click-target:hover {
+  background: #b3e1ff;
+}
+
+.change-count-wrapper {
+  max-width: 240px;
+  margin: 20px auto 0px auto;
+}
+
+.btn-change-count {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00bcd4;
+  background: #dbebf8;
+  border: none;
+  transition: 0.4s;
+}
+
+.btn-change-count:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+.header-change-count {
+  border-bottom: solid 3px black;
+}
+
+ul, ol {
+  padding: 0;
+  text-align: center;
+  margin: 3px 0px;
+}
+
+ul li {
+  position: relative;
+  list-style-type: none!important;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  margin-bottom: 1px;
+  vertical-align: middle;
+}
+
+.btn-reset {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00BCD4;
+  background: #ECECEC;
+  border: none;
+  border-radius: 0;
+  transition: .4s;
+}
+
+.btn-reset:hover {
+  background: #636363;
+}
