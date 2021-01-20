@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button mashing</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>目標クリック連打数：<span class="js-target-count">10</span></div>
+      <div class="timer">
+        <span class="js-timer-label">経過時間：</span>
+        <span class="js-spend-time"></span>
+      </div>
+
+      <div class="click-btn-wrapper">
+        <button class="js-click-target btn-click-target">
+          <span>Click!</span><br />
+          <span class="js-counter"></span><br />
+        </button>
+      </div>
+
+      <div>
+        <button class="js-reset btn-reset">リセット</button>
+      </div>
+
+      <div class="change-count-wrapper">
+        クリック数を変更する
+        <ul>
+          <li>
+            <button class="js-change-count btn-change-count" data-count="10">
+              クリック数：10回
+            </button>
+          </li>
+          <li>
+            <button class="js-change-count btn-change-count" data-count="20">
+              クリック数：20回
+            </button>
+          </li>
+          <li>
+            <button class="js-change-count btn-change-count" data-count="30">
+              クリック数：30回
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
