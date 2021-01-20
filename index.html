@@ -7,6 +7,26 @@
     <title>button mashing</title>
     <link rel="stylesheet" type="text/css" href="app.css" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <!-- ServiceWorker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("./sw.js").then(
+            function (registration) {
+              // Registration was successful
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
+            },
+            function (err) {
+              // registration failed :(
+              console.log("ServiceWorker registration failed: ", err);
+            }
+          );
+        });
+      }
+    </script>
   </head>
   <body>
     <div class="wrapper">
